@@ -95,3 +95,9 @@ def phoneme_cleaners(text):
     text = expand_abbreviations(text)
     text = collapse_whitespace(text)
     return text
+
+
+def phoneme_cleaners(text):
+    '''Basic pipeline for phonemes mode, including collapses whitespace without transliteration.'''
+    text = collapse_whitespace(text)
+    return text
